@@ -1,3 +1,4 @@
+
 function encriptar(traduccion){
     document.querySelector("#warning").removeAttribute("style");
     var textarea = document.querySelector("#texto");
