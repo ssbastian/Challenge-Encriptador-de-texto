@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es-col">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--para que la pantalla se adapte-->
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+    <header>
+        <img src="assets/Logo.svg" alt="logo pagina">
+    </header>
+
+    <main>
+        <section class="main__section1">
+            <textarea id="valorUsuario" placeholder="texto aqui" rows="10"></textarea>
+            <div class="main__section1__alert">
+                <div class="alert__msj"><img src="assets/exclamation-circlesvg.svg" alt="alert icon"><span>Solo letras
+                        minusculas y sin acentos</span></div><!-- .nombre_clase>img+span -->
+            </div>
+
+            <div class="main__section1__botones">
+                <button onclick="encriptar()" class="main__section1__botonE">Encriptar</button>
+                <button onclick="desencriptar()" class="main__section1__botonD">Desencriptar</button>
+            </div>
+
+        </section>
+        <section class="main__section2">
+            <div class="main__section2__hidden" id="myDIV">
+                <img src="assets/Muñeco.svg" alt="Muñeco"> <!-- img.muneco+div.mensajes>h5+p -->
+                <div class="">
+                    <h3>Nungún mensaje fue encontrado</h3>
+                    <p>Ingrese el texto que deses encriptar o desencriptar</p>
+                </div>
+            </div>
+
+            <button onclick="clipboard()" class="presentacion__section2__div__botonC">Copiar</button>
+        </section>
+    </main>
+
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
